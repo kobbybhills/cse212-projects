@@ -1,14 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 // TODO Problem 2 - Write and run test cases and fix the code to match requirements.
-
 [TestClass]
 public class PriorityQueueTests
 {
     [TestMethod]
     // Scenario: Add 3 items with different priorities. Dequeue should return highest priority first.
     // Expected Result: "Urgent"
-    // Defect(s) Found: Dequeue did not remove item or prioritized incorrectly
     public void TestPriorityQueue_1()
     {
         var priorityQueue = new PriorityQueue();
@@ -23,7 +20,6 @@ public class PriorityQueueTests
     [TestMethod]
     // Scenario: Add 2 items with the same priority. First one added should come out first.
     // Expected Result: "First"
-    // Defect(s) Found: Wrong item dequeued (violates FIFO)
     public void TestPriorityQueue_2()
     {
         var priorityQueue = new PriorityQueue();
